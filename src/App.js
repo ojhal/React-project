@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class App extends Component {
   constructor(props) {
     super(props);
+    console.log("constructor called")
 
   }
   handleClick = () => {
@@ -13,12 +14,12 @@ export default class App extends Component {
 
 
   render() {
-    <div>
-      <h1>hello world</h1>
-    </div>
+    console.log("render called")
+
     return (
       <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxqcJ9gupPODmqelu9fEvNrzc1GAt7yAR3i4AMt3Wh9vgvyEiKRQ0r24LeSb4Kfk4g34&usqp=CAU" />
+        <h1>Hello world</h1>
+
 
         <button onClick={this.handleClick}>Click me</button>
 
