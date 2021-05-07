@@ -10,6 +10,9 @@ export default class App extends Component {
 
     console.log('clicked')
   }
+  componentDidMount() {
+    console.log("mounted")
+  }
 
 
 
