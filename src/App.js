@@ -1,33 +1,44 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    console.log("constructor called")
+const App = () => {
+  return <h1> My name is Ojhal Patwa</h1>
 
-  }
-  handleClick = () => {
-
-    console.log('clicked')
-  }
-  componentDidMount() {
-    console.log("mounted")
-  }
+};
 
 
 
-  render() {
-    console.log("render called")
-
-    return (
-      <div>
-        <h1>Hello world</h1>
 
 
-        <button onClick={this.handleClick}>Click me</button>
+export default App;
 
-      </div>
-    )
-  }
-}
+// export default class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     console.log("constructor called")
+
+//   }
+//   handleClick = () => {
+
+//     console.log('clicked')
+//   }
+//   componentDidMount() {
+//     console.log("mounted")
+//   }
+
+
+
+//   render() {
+//     console.log("render called")
+
+//     return (
+//       <div>
+//         <h1>Hello world</h1>
+
+
+//         <button onClick={this.handleClick}>Click me</button>
+
+//       </div>
+//     )
+//   }
+// }
 
