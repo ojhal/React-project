@@ -20,7 +20,8 @@ class App extends React.Component {
   componentDidMount() {
     fetch('https://reqres.in/api/users?page=2').then((response) => {
       response.json().then((result) => {
-        console.log(result)
+        // console.log(result.data)
+        this.setState({ user: result.data })
       })
     })
     // console.log("mounted")
@@ -32,12 +33,19 @@ class App extends React.Component {
     return (
       <div>
         <h1>Hello world</h1>
+        {
+          this.state.user ?
+            this.state.user.map((item, i) =>
+              <div><p>{i}--{item.first_name}</p></div>
+            )
+            :
 
-        {/* 
-        <button onClick={this.handleClick}>Click me</button> */}
+            null
+        }
+
 
       </div>
-    )
+    );
   }
 }
 export default App;
