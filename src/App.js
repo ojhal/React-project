@@ -36,7 +36,7 @@ class App extends React.Component {
         {
           this.state.user ?
             this.state.user.map((item, i) =>
-              <div><p>{i}--{item.first_name}</p></div>
+              <div><p>{i}--{item.first_name}--{item.last_name}--{item.email}</p></div>
             )
             :
 
