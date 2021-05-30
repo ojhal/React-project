@@ -1,8 +1,20 @@
 import React from "react";
 import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import About from "./About";
+import Contact from "./Contact";
 
 const App = () => {
-  return <h1>Hello ojhal</h1>;
+  return (
+    <>
+      <switch>
+        <Route path="/" component={About} />
+        <Route path="/contact" component={Contact} />
+      </switch>
+      {/* <About />
+      <Contact /> */}
+    </>
+  );
 };
 // class App extends React.Component {
 //   constructor() {
