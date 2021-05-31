@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   return (
     <>
-      <Link to="/">About US</Link>
-      <Link to="/contact">Contact US</Link>
+      <NavLink activeClassName="active_class" to="/">
+        About US
+      </NavLink>
+      <NavLink activeClassName="active_class" to="/contact">
+        Contact US
+      </NavLink>
       <br />
       <a href="/"> AboutUS</a>
       <a href="/Contact"> ContactUS</a>
